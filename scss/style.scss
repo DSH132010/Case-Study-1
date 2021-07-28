@@ -12,3 +12,48 @@ body{
     padding: 0;
 }
 
+.logo{
+    text-transform: uppercase;
+    font-family: var(--Oswald);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    letter-spacing: 0.06em;
+    position: relative;
+    height: max-content;
+    width: max-content;
+    padding-top: 3px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        width: 25.09px;
+        height: 6.13px;
+        left: 0;
+        top: 0;
+        background: #3C3B3B;
+        border-radius: 38px;
+    }
+}
+
+.logo-two{
+    text-transform: uppercase;
+    font-family: var(--Oswald);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 27px;
+    letter-spacing: 0.06em;
+    position: relative;
+    height: max-content;
+    width: max-content;
+}
+
+header{
+    // padding: 1rem 0rem;
+    display: flex;
+    justify-content:space-between;
+}
+
+.container{
+    padding: 1rem 7rem;
+}

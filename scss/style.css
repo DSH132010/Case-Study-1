@@ -11,4 +11,61 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.logo {
+  text-transform: uppercase;
+  font-family: var(--Oswald);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  letter-spacing: 0.06em;
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-top: 3px;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  width: 25.09px;
+  height: 6.13px;
+  left: 0;
+  top: 0;
+  background: #3C3B3B;
+  border-radius: 38px;
+}
+
+.logo-two {
+  text-transform: uppercase;
+  font-family: var(--Oswald);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  letter-spacing: 0.06em;
+  position: relative;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container {
+  padding: 1rem 7rem;
+}
 /*# sourceMappingURL=style.css.map */
