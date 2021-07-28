@@ -1,2 +1,14 @@
 @import url('../Fonts/fonts.css');
 @import url('../Colors/colors.css');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
