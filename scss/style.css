@@ -24,10 +24,10 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  padding-top: 3px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  padding-top: 3px;
 }
 
 .logo::before {
@@ -109,6 +109,13 @@ main .content h1 {
   font-weight: 500;
 }
 
+@media (max-width: 750px) {
+  main .content h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 main .content p {
   font-family: var(--Quicksand);
   font-size: 17px;
@@ -118,6 +125,12 @@ main .content p {
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
+}
+
+@media (max-width: 750px) {
+  main .content p {
+    text-align: center;
+  }
 }
 
 main .img {
@@ -131,8 +144,14 @@ main .img {
 }
 
 main .img img {
-  width: 900px;
+  width: 70%;
   margin-top: 10px;
+}
+
+@media (max-width: 750px) {
+  main .img img {
+    width: 130%;
+  }
 }
 
 .hero-footer {

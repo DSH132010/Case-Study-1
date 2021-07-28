@@ -22,8 +22,8 @@ body{
     letter-spacing: 0.06em;
     position: relative;
     height: max-content;
-    width: max-content;
     padding-top: 3px;
+    width: max-content;
 
     &::before{
         content: '';
@@ -87,6 +87,11 @@ main{
             height: max-content;
             font-style: normal;
             font-weight: 500;
+
+            @media (max-width:750px) {
+                width: 100%; 
+                text-align: center;    
+            }
         }
 
         p{
@@ -96,6 +101,10 @@ main{
             font-style: normal;
             font-weight: 500;
             line-height: 25px;
+
+            @media (max-width:750px) {
+                text-align: center;
+            }
         }
     }
 
@@ -106,8 +115,12 @@ main{
         align-items: center;
 
         img{
-            width: 900px;
+            width: 70%;
             margin-top: 10px;
+
+            @media (max-width:750px) {
+                width: 130%;
+            }
         }
     }
 }
