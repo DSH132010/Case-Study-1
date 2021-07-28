@@ -10,6 +10,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .logo{
@@ -48,6 +49,17 @@ body{
     width: max-content;
 }
 
+.bubble1{
+    position: absolute;
+    width: 434.15px;
+    height: 447.69px;
+    left: -93.6px;
+    top: -186px;
+    background: var(--Gradient-1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
 header{
     // padding: 1rem 0rem;
     display: flex;
@@ -55,5 +67,62 @@ header{
 }
 
 .container{
-    padding: 1rem 7rem;
+    padding: 1rem 5rem;
+}
+.hero{
+    height:75vh;
+    width:100%;
+    display: grid;
+    align-items: center;
+}
+main{
+    width:100%;
+
+    .content{
+        text-align: center;
+
+        h1{
+            font-family: var(--Quicksand);
+            font-size: 45px;
+            height: max-content;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        p{
+            font-family: var(--Quicksand);
+            font-size: 17px;
+            height: max-content;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 25px;
+        }
+    }
+
+    .img{
+        width:100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        img{
+            width: 900px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.hero-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .author{
+        font-family: var(--Oswald);
+        margin: 0;
+    }
+
+    svg{
+        margin: 0;
+    }
 }

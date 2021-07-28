@@ -10,6 +10,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -56,6 +57,17 @@ body {
   width: max-content;
 }
 
+.bubble1 {
+  position: absolute;
+  width: 434.15px;
+  height: 447.69px;
+  left: -93.6px;
+  top: -186px;
+  background: var(--Gradient-1);
+  border-radius: 50%;
+  z-index: -1;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,6 +78,81 @@ header {
 }
 
 .container {
-  padding: 1rem 7rem;
+  padding: 1rem 5rem;
+}
+
+.hero {
+  height: 75vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  width: 100%;
+}
+
+main .content {
+  text-align: center;
+}
+
+main .content h1 {
+  font-family: var(--Quicksand);
+  font-size: 45px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-style: normal;
+  font-weight: 500;
+}
+
+main .content p {
+  font-family: var(--Quicksand);
+  font-size: 17px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+main .img {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .img img {
+  width: 900px;
+  margin-top: 10px;
+}
+
+.hero-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-footer .author {
+  font-family: var(--Oswald);
+  margin: 0;
+}
+
+.hero-footer svg {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
